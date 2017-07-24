@@ -1,0 +1,186 @@
+format 70
+
+classinstance 128002 class_ref 128002 // TWurm
+  name ""   xyz 363 17 2000 life_line_z 2000
+classinstance 128130 class_ref 128130 // TSteuerung
+  name ""   xyz 205 17 2000 life_line_z 2000
+classinstance 128258 class_ref 128258 // TFWorm
+  name ""   xyz 66 14 2000 life_line_z 2000
+fragment 130690 ""
+  xyzwh 147 177 2015 290 143
+end
+note 130818 "richtung=r"
+  xyzwh 151 141 2020 75 37
+note 131970 "richtung=l"
+  xyzwh 152.5 333.5 2020 75 37
+fragment 132994 ""
+  xyzwh 147 369.5 2015 284 144
+end
+note 133122 "richtung=u"
+  xyzwh 152.5 524 2020 75 37
+fragment 133250 ""
+  xyzwh 148 560 2015 284 144
+end
+note 135042 "richtung=o"
+  xyzwh 155 725.5 2020 75 37
+fragment 135170 ""
+  xyzwh 148 761 2015 284 144
+end
+durationcanvas 129410 classinstance_ref 128258 // :TFWorm
+  xyzwh 86 64 2010 11 913
+end
+durationcanvas 129666 classinstance_ref 128130 // :TSteuerung
+  xyzwh 233 80 2010 11 872
+end
+durationcanvas 129922 classinstance_ref 128002 // :TWurm
+  xyzwh 382 100 2010 11 44
+end
+durationcanvas 130946 classinstance_ref 128002 // :TWurm
+  xyzwh 382 265 2010 11 44
+end
+durationcanvas 131330 classinstance_ref 128002 // :TWurm
+  xyzwh 382 196 2010 11 49
+end
+durationcanvas 132098 classinstance_ref 128002 // :TWurm
+  xyzwh 382 386 2010 11 43
+end
+durationcanvas 132482 classinstance_ref 128002 // :TWurm
+  xyzwh 382 448 2010 11 42
+end
+durationcanvas 133378 classinstance_ref 128002 // :TWurm
+  xyzwh 382 574 2010 11 46
+end
+durationcanvas 133762 classinstance_ref 128002 // :TWurm
+  xyzwh 382 640 2010 11 47
+end
+durationcanvas 134146 classinstance_ref 128002 // :TWurm
+  xyzwh 382 776 2010 11 45
+end
+durationcanvas 134530 classinstance_ref 128002 // :TWurm
+  xyzwh 382 839 2010 11 45
+end
+reflexivemsg 129538 synchronous
+  to durationcanvas_ref 129410
+  yz 64 2015 explicitmsg "TTickerTimer"
+  show_full_operations_definition default drawing_language default
+  label_xy 96 45
+msg 129794 synchronous
+  from durationcanvas_ref 129410
+  to durationcanvas_ref 129666
+  yz 82 2020 explicitmsg "timer"
+  show_full_operations_definition default drawing_language default
+  label_xy 134 68
+msg 130050 synchronous
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 129922
+  yz 101 2015 msg operation_ref 136706 // "gibRichtung() : ZEICHEN"
+  show_full_operations_definition default drawing_language default
+  label_xy 266 87
+msg 130178 return
+  from durationcanvas_ref 129922
+  to durationcanvas_ref 129666
+  yz 128 2015 explicitmsg "richtung"
+  show_full_operations_definition default drawing_language default
+  label_xy 294 114
+msg 131074 synchronous
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 130946
+  yz 266 2015 explicitmsg "setzeX(in x+10)"
+  show_full_operations_definition default drawing_language default
+  label_xy 256 252
+msg 131202 return
+  from durationcanvas_ref 130946
+  to durationcanvas_ref 129666
+  yz 293 2015 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 131458 synchronous
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 131330
+  yz 202 2015 msg operation_ref 128002 // "gibX(in i : int) : GZ"
+  show_full_operations_definition default drawing_language default
+  label_xy 289 188
+msg 131586 return
+  from durationcanvas_ref 131330
+  to durationcanvas_ref 129666
+  yz 229 2015 explicitmsg "x"
+  show_full_operations_definition default drawing_language default
+  label_xy 311 215
+msg 132226 synchronous
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 132098
+  yz 386 2015 msg operation_ref 128002 // "gibX(in i : int) : GZ"
+  show_full_operations_definition default drawing_language default
+  label_xy 289 372
+msg 132354 return
+  from durationcanvas_ref 132098
+  to durationcanvas_ref 129666
+  yz 413 2015 explicitmsg "x"
+  show_full_operations_definition default drawing_language default
+  label_xy 310 399
+msg 132610 synchronous
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 132482
+  yz 448 2015 explicitmsg "setzeX(in x-10)"
+  show_full_operations_definition default drawing_language default
+  label_xy 276 434
+msg 132738 return
+  from durationcanvas_ref 132482
+  to durationcanvas_ref 129666
+  yz 474 2015 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 133506 synchronous
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 133378
+  yz 574 2015 msg operation_ref 128130 // "gibY(in i : int) : GZ"
+  show_full_operations_definition default drawing_language default
+  label_xy 288 560
+msg 133634 return
+  from durationcanvas_ref 133378
+  to durationcanvas_ref 129666
+  yz 603 2015 explicitmsg "y"
+  show_full_operations_definition default drawing_language default
+  label_xy 310 589
+msg 133890 synchronous
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 133762
+  yz 640 2015 explicitmsg "setzeY(in y+10)"
+  show_full_operations_definition default drawing_language default
+  label_xy 274 626
+msg 134018 return
+  from durationcanvas_ref 133762
+  to durationcanvas_ref 129666
+  yz 669 2015 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 134274 synchronous
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 134146
+  yz 776 2015 msg operation_ref 128130 // "gibY(in i : int) : GZ"
+  show_full_operations_definition default drawing_language default
+  label_xy 288 762
+msg 134402 return
+  from durationcanvas_ref 134146
+  to durationcanvas_ref 129666
+  yz 803 2020 explicitmsg "y"
+  show_full_operations_definition default drawing_language default
+  label_xy 310 789
+msg 134658 synchronous
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 134530
+  yz 839 2015 explicitmsg "setzeY(in y-10)"
+  show_full_operations_definition default drawing_language default
+  label_xy 275 825
+msg 134786 return
+  from durationcanvas_ref 134530
+  to durationcanvas_ref 129666
+  yz 866 2015 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 135554 return
+  from durationcanvas_ref 129666
+  to durationcanvas_ref 129410
+  yz 938 2015 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+selfreflexivemsg 135682
+  to durationcanvas_ref 129410
+  yz 969 2015 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+end

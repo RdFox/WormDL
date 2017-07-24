@@ -1,0 +1,15 @@
+window_sizes 1280 738 183 435 629 35
+diagrams
+  active  classdiagram_ref 128111 // Klassen
+    1091 629 100 4 0 0
+  sequencediagram_ref 128239 // createGame
+    974 629 100 4 0 0
+  sequencediagram_ref 128012 // Spielzug
+    974 629 100 4 0 0
+end
+show_stereotypes
+selected classdiagram_ref 128111 // Klassen
+open
+  classview_ref 128111 // Diagramme
+end
+end

@@ -1,0 +1,333 @@
+format 70
+
+classinstance 128012 class_ref 128130 // TSteuerung
+  name "control"   xyz 178 4 2000 life_line_z 2000
+classinstance 128140 class_ref 134540 // TFutter
+  name "futter[f]"   xyz 590 4 2000 life_line_z 2000
+classinstance 128268 class_ref 128258 // TFWorm
+  name "F_Worm"   xyz 59 4 0 life_line_z 2025
+classinstance 128396 class_ref 128002 // TWurm
+  name "wurm[0]"   xyz 457 4 2000 life_line_z 2000
+classinstance 128524 class_ref 134668 // TSpielEinstellung
+  name "spiel"   xyz 310 4 2000 life_line_z 2000
+textcanvas 130956 "for ( f=0; f<=2; f++)"
+  xyzwh 262 69 2000 94 14
+note 131724 "mit gibX() und gibY() ebenso"
+  color white  xyzwh 658 180 2000 121 49
+fragment 132236 ""
+  xyzwh 75 169 3015 719 122
+end
+textcanvas 132364 "[aktiv= true]"
+  xyzwh 285 146 2000 193 15
+textcanvas 133644 "for( i=laenge; i>0; i--)"
+  xyzwh 116 367 2000 101 14
+note 134284 "mit gibY(i) ebenso"
+  color white  xyzwh 511.5 399.5 2000 109 35
+fragment 134412 ""
+  xyzwh 35 90 3005 780 218
+end
+note 135692 "mit Y ebenso"
+  color white  xyzwh 508 500 2000 119 37
+note 136972 "mit Y ebenso"
+  color white  xyzwh 510.5 583.5 2000 119 37
+fragment 137356 ""
+  xyzwh 74 385 3040 628 183
+end
+textcanvas 137996 "[KI=true]"
+  xyzwh 256 710 2000 40 14
+fragment 138508 ""
+  xyzwh 193 729 3005 148 68
+end
+note 139404 "mit AbfrageWand(w) und AbfrageSelbst(w) ebenso"
+  color white  xyzwh 315 812 2000 147 49
+textcanvas 139532 "for( f=0; f<=2; f++)"
+  xyzwh 240 864 2000 91 14
+textcanvas 140044 "[aktiv=true]"
+  xyzwh 240 926 2000 53 14
+note 140812 "mit Y ebenso"
+  color white  xyzwh 508 955 2000 119 37
+textcanvas 141452 "[frisst=true]"
+  xyzwh 227 1054 3005 68 18
+fragment 141580 ""
+  xyzwh 158 878 2010 510 259
+end
+fragment 141708 ""
+  xyzwh 189 942 2015 461 191
+end
+fragment 141836 ""
+  xyzwh 196 1072 2025 184 54
+end
+note 142092 "Ende:
+-Je nachdem welcher Spieler gerade an der Reihe ist, dessen Punkte werden aktualisiert
+-Neuer Wurm wird in kompletter Länge gezeichnet"
+  color white  xyzwh 683 1055 2000 155 131
+note 142476 ""
+  color lightyellow  xyzwh 686 1160 0 35 35
+durationcanvas 129932 classinstance_ref 128268 // F_Worm:TFWorm
+  xyzwh 99 52 2025 11 717
+  overlappingdurationcanvas 131084
+    xyzwh 105 244 3025 11 42
+  end
+  overlappingdurationcanvas 133260
+    xyzwh 105 447 3020 11 34
+  end
+end
+durationcanvas 130188 classinstance_ref 128012 // control:TSteuerung
+  xyzwh 222 52 2010 11 698
+end
+durationcanvas 130444 classinstance_ref 128140 // futter[f]:TFutter
+  xyzwh 625 106 2000 11 39
+end
+durationcanvas 131340 classinstance_ref 128140 // futter[f]:TFutter
+  xyzwh 625 188 2000 11 41
+end
+durationcanvas 132620 classinstance_ref 128396 // wurm[0]:TWurm
+  xyzwh 494 325 2010 11 39
+end
+durationcanvas 134028 classinstance_ref 128396 // wurm[0]:TWurm
+  xyzwh 494 397 2005 11 39
+end
+durationcanvas 135052 classinstance_ref 128012 // control:TSteuerung
+  xyzwh 222 51 2010 11 1129
+end
+durationcanvas 135308 classinstance_ref 128396 // wurm[0]:TWurm
+  xyzwh 494 478 2005 11 38
+end
+durationcanvas 135820 classinstance_ref 128396 // wurm[0]:TWurm
+  xyzwh 494 524 2005 11 36
+end
+durationcanvas 136204 classinstance_ref 128268 // F_Worm:TFWorm
+  xyzwh 99 49 2030 11 1137
+  overlappingdurationcanvas 136460
+    xyzwh 105 638 3025 11 37
+  end
+end
+durationcanvas 136716 classinstance_ref 128396 // wurm[0]:TWurm
+  xyzwh 494 584 2005 11 38
+end
+durationcanvas 137484 classinstance_ref 128012 // control:TSteuerung
+  xyzwh 222 52 2000 11 1122
+  overlappingdurationcanvas 138124
+    xyzwh 228 746 2030 11 32
+  end
+  overlappingdurationcanvas 138636
+    xyzwh 228 815 2030 11 40
+  end
+  overlappingdurationcanvas 140172
+    xyzwh 228 1020 2030 11 28
+  end
+  overlappingdurationcanvas 141068
+    xyzwh 228 1093 2030 11 25
+  end
+end
+durationcanvas 137612 classinstance_ref 128524 // spiel:TSpielEinstellung
+  xyzwh 361 667 2010 11 40
+end
+durationcanvas 139660 classinstance_ref 128140 // futter[f]:TFutter
+  xyzwh 625 890 2000 11 38
+end
+durationcanvas 140556 classinstance_ref 128396 // wurm[0]:TWurm
+  xyzwh 494 957 2000 11 33
+end
+msg 130316 synchronous
+  from durationcanvas_ref 129932
+  to durationcanvas_ref 130188
+  yz 59 3005 explicitmsg "Spielzug(w : GZ)"
+  show_full_operations_definition default drawing_language default
+  label_xy 122 48
+msg 130572 synchronous
+  from durationcanvas_ref 130188
+  to durationcanvas_ref 130444
+  yz 107 2010 msg operation_ref 136204 // "gibAktiv() : BOOL"
+  show_full_operations_definition default drawing_language default
+  label_xy 386 93
+msg 130700 return
+  from durationcanvas_ref 130444
+  to durationcanvas_ref 130188
+  yz 134 2010 explicitmsg "aktiv"
+  show_full_operations_definition default drawing_language default
+  label_xy 407 124
+msg 131212 synchronous
+  from durationcanvas_ref 130188
+  to durationcanvas_ref 131084
+  yz 245 2020 explicitmsg "zeichne(futterfarbe, x, y)"
+  show_full_operations_definition default drawing_language default
+  label_xy 116 231
+msg 131468 synchronous
+  from durationcanvas_ref 130188
+  to durationcanvas_ref 131340
+  yz 189 2010 msg operation_ref 136076 // "gibFarbe() : TColor"
+  show_full_operations_definition default drawing_language default
+  label_xy 383 175
+msg 131596 return
+  from durationcanvas_ref 131340
+  to durationcanvas_ref 130188
+  yz 217 2015 explicitmsg "futterfarbe"
+  show_full_operations_definition default drawing_language default
+  label_xy 402 203
+msg 131980 return
+  from durationcanvas_ref 131084
+  to durationcanvas_ref 130188
+  yz 271 2020 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 132748 synchronous
+  from durationcanvas_ref 130188
+  to durationcanvas_ref 132620
+  yz 325 2015 msg operation_ref 134924 // "gibLaenge() : GZ"
+  show_full_operations_definition default drawing_language default
+  label_xy 279 313
+msg 132876 return
+  from durationcanvas_ref 132620
+  to durationcanvas_ref 130188
+  yz 351 2015 explicitmsg "laenge"
+  show_full_operations_definition default drawing_language default
+  label_xy 319 339
+msg 133388 synchronous
+  from durationcanvas_ref 130188
+  to durationcanvas_ref 133260
+  yz 447 2015 explicitmsg "ClearPosition( x, y, 10)"
+  show_full_operations_definition default drawing_language default
+  label_xy 112 436
+msg 133516 return
+  from durationcanvas_ref 133260
+  to durationcanvas_ref 130188
+  yz 468 2015 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 134156 synchronous
+  from durationcanvas_ref 130188
+  to durationcanvas_ref 134028
+  yz 397 2010 explicitmsg "gibX (i) : GZ"
+  show_full_operations_definition default drawing_language default
+  label_xy 296 385
+msg 135180 return
+  from durationcanvas_ref 134028
+  to durationcanvas_ref 135052
+  yz 420 2015 explicitmsg "x"
+  show_full_operations_definition default drawing_language default
+  label_xy 331 409
+msg 135436 synchronous
+  from durationcanvas_ref 135052
+  to durationcanvas_ref 135308
+  yz 479 2025 explicitmsg "gibX(i-1) : GZ"
+  show_full_operations_definition default drawing_language default
+  label_xy 282 468
+msg 135564 return
+  from durationcanvas_ref 135308
+  to durationcanvas_ref 135052
+  yz 503 2010 explicitmsg "x"
+  show_full_operations_definition default drawing_language default
+  label_xy 323 493
+msg 135948 synchronous
+  from durationcanvas_ref 135052
+  to durationcanvas_ref 135820
+  yz 529 2010 explicitmsg "setzeX( x)"
+  show_full_operations_definition default drawing_language default
+  label_xy 293 519
+msg 136076 return
+  from durationcanvas_ref 135820
+  to durationcanvas_ref 135052
+  yz 549 2015 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 136588 synchronous
+  from durationcanvas_ref 135052
+  to durationcanvas_ref 136460
+  yz 639 3030 explicitmsg "ClearPosition(x, y, 10)"
+  show_full_operations_definition default drawing_language default
+  label_xy 116 625
+msg 136844 synchronous
+  from durationcanvas_ref 135052
+  to durationcanvas_ref 136716
+  yz 585 2010 explicitmsg "gibX(0) : GZ"
+  show_full_operations_definition default drawing_language default
+  label_xy 292 571
+msg 137100 return
+  from durationcanvas_ref 136716
+  to durationcanvas_ref 135052
+  yz 607 3035 explicitmsg "x"
+  show_full_operations_definition default drawing_language default
+  label_xy 313 596
+msg 137228 return
+  from durationcanvas_ref 136460
+  to durationcanvas_ref 135052
+  yz 662 3035 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 137740 synchronous
+  from durationcanvas_ref 137484
+  to durationcanvas_ref 137612
+  yz 671 2015 explicitmsg "gibKI():BOOL"
+  show_full_operations_definition default drawing_language default
+  label_xy 266 657
+msg 137868 return
+  from durationcanvas_ref 137612
+  to durationcanvas_ref 137484
+  yz 694 2020 explicitmsg "KI"
+  show_full_operations_definition default drawing_language default
+  label_xy 293 684
+reflexivemsg 138252 synchronous
+  to durationcanvas_ref 138124
+  yz 746 2025 explicitmsg "KIZug()"
+  show_full_operations_definition default drawing_language default
+  label_xy 236 732
+selfreflexivemsg 138380
+  to durationcanvas_ref 138124
+  yz 770 2025 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+reflexivemsg 138764 synchronous
+  to durationcanvas_ref 138636
+  yz 815 2025 explicitmsg "Bewegung(w)"
+  show_full_operations_definition default drawing_language default
+  label_xy 241 801
+selfreflexivemsg 138892
+  to durationcanvas_ref 138636
+  yz 847 2025 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 139788 synchronous
+  from durationcanvas_ref 137484
+  to durationcanvas_ref 139660
+  yz 891 2015 msg operation_ref 136204 // "gibAktiv() : BOOL"
+  show_full_operations_definition default drawing_language default
+  label_xy 387 877
+msg 139916 return
+  from durationcanvas_ref 139660
+  to durationcanvas_ref 137484
+  yz 915 2015 explicitmsg "aktiv"
+  show_full_operations_definition default drawing_language default
+  label_xy 418 901
+reflexivemsg 140300 synchronous
+  to durationcanvas_ref 140172
+  yz 1020 2025 explicitmsg "AbfrageFutter( x, y, f) : BOOL"
+  show_full_operations_definition default drawing_language default
+  label_xy 236 1006
+selfreflexivemsg 140428
+  to durationcanvas_ref 140172
+  yz 1040 2025 explicitmsg "frisst"
+  show_full_operations_definition default drawing_language default
+  label_xy 263 1038
+msg 140684 synchronous
+  from durationcanvas_ref 137484
+  to durationcanvas_ref 140556
+  yz 958 2000 explicitmsg "gibX(0) : GZ"
+  show_full_operations_definition default drawing_language default
+  label_xy 293 945
+msg 140940 return
+  from durationcanvas_ref 140556
+  to durationcanvas_ref 137484
+  yz 975 2000 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+reflexivemsg 141196 synchronous
+  to durationcanvas_ref 141068
+  yz 1093 2000 explicitmsg "Punktgeholt( f, w)"
+  show_full_operations_definition default drawing_language default
+  label_xy 240 1077
+selfreflexivemsg 141324
+  to durationcanvas_ref 141068
+  yz 1110 2030 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+msg 141964 return
+  from durationcanvas_ref 135052
+  to durationcanvas_ref 136204
+  yz 1169 2035 unspecifiedmsg
+  show_full_operations_definition default drawing_language default
+line 142732 -_-_ decenter_end 981
+  from ref 142476 z 2011 to ref 135052
+end

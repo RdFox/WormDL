@@ -1,0 +1,49 @@
+format 70
+
+classcanvas 128002 class_ref 128002 // TWurm
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyzwh 501.9 413.6 0 321 519
+end
+classcanvas 128012 class_ref 134540 // TFutter
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyzwh 58.2 436.9 2000 201 263
+end
+classcanvas 128130 class_ref 128130 // TSteuerung
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyzwh 472.6 7.6 2000 345 365
+end
+classcanvas 128258 class_ref 128258 // TFWorm
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyzwh 32 7.5 2000 291 397
+end
+classcanvas 128268 class_ref 134668 // TSpielEinstellung
+  draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+  xyzwh 294 504.6 2005 179 199
+end
+relationcanvas 129676 relation_ref 134668 // <unidirectional association>
+  from ref 128130 z 2001 to ref 128012
+  role_a_pos 276 469 3000 no_role_b
+  multiplicity_a_pos 268 485 3000 no_multiplicity_b
+end
+relationcanvas 130188 relation_ref 134540 // <unidirectional association>
+  decenter_begin 63
+  decenter_end 523
+  from ref 128130 z 2006 to ref 128268
+  role_a_pos 402 485 3000 no_role_b
+  multiplicity_a_pos 376 485 3000 no_multiplicity_b
+end
+relationcanvas 130444 relation_ref 129282 // <unidirectional association>
+  decenter_begin 605
+  decenter_end 558
+  from ref 128130 z 2001 to ref 128002
+  role_a_pos 690 394 3000 no_role_b
+  multiplicity_a_pos 664 394 3000 no_multiplicity_b
+end
+relationcanvas 131970 relation_ref 129410 // <association>
+  decenter_begin 597
+  decenter_end 549
+  from ref 128130 z 2001 to ref 128258
+  role_a_pos 332 206 3000 role_b_pos 433 287 3000
+  multiplicity_a_pos 332 231 3000 multiplicity_b_pos 455 231 3000
+end
+end

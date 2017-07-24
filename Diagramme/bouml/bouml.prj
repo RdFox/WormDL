@@ -1,0 +1,1207 @@
+format 70
+"bouml"
+  revision 13
+  modified_by 12 "Lisa"
+
+
+  
+  // class settings
+  default_attribute_visibility protected default_relation_visibility protected default_operation_visibility public
+  //class diagram settings
+  draw_all_relations yes hide_attributes no hide_operations no hide_getset_operations no show_members_full_definition no show_members_visibility no show_members_stereotype no show_members_multiplicity no show_members_initialization no show_attribute_modifiers no member_max_width 127 show_parameter_dir yes show_parameter_name yes package_name_in_tab no class_drawing_mode natural drawing_language uml show_context_mode no auto_label_position yes show_relation_modifiers no show_relation_visibility no show_infonote no shadow yes show_stereotype_properties no
+  //use case diagram settings
+  package_name_in_tab no show_context no auto_label_position yes draw_all_relations yes class_drawing_mode actor shadow yes show_stereotype_properties no
+  //sequence diagram settings
+  show_full_operations_definition no write_horizontally yes class_drawing_mode natural drawing_language uml draw_all_relations yes shadow yes show_stereotype_properties no
+  //collaboration diagram settings
+  show_full_operations_definition no show_hierarchical_rank no write_horizontally yes drawing_language uml package_name_in_tab no show_context no draw_all_relations yes shadow yes show_stereotype_properties no
+  //object diagram settings
+   write_horizontally yes package_name_in_tab no show_context no auto_label_position yes draw_all_relations yes shadow yes show_stereotype_properties no
+  //component diagram settings
+  package_name_in_tab no show_context no auto_label_position yes draw_all_relations yes shadow yes
+  draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no
+  //deployment diagram settings
+  package_name_in_tab no show_context no write_horizontally yes auto_label_position yes draw_all_relations yes shadow yes
+  draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no
+  //state diagram settings
+  package_name_in_tab no show_context no auto_label_position yes write_trans_label_horizontally yes show_trans_definition no draw_all_relations yes shadow yes
+  show_activities yes region_horizontally yes drawing_language uml show_stereotype_properties no
+  //activity diagram settings
+  package_name_in_tab no show_context no show_opaque_action_definition no auto_label_position yes write_flow_label_horizontally no draw_all_relations yes shadow yes
+  show_infonote yes drawing_language uml show_stereotype_properties no
+  
+  class_color yellow duration_color transparent continuation_color gray note_color blue fragment_color transparent subject_color transparent usecase_color yellow package_color transparent component_color green artifact_color green deploymentnode_color gray state_color yellow stateaction_color transparent activity_color transparent activityregion_color transparent activitypartition_color transparent activityaction_color transparent parameterpin_color white 
+  font_size 8
+  diagram_format A4
+
+  mark_for_import
+  
+  classview 128111 "Diagramme"
+    //class diagram settings
+    draw_all_relations default hide_attributes no hide_operations no hide_getset_operations default show_members_full_definition yes show_members_visibility yes show_members_stereotype default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir yes show_parameter_name yes package_name_in_tab default class_drawing_mode class drawing_language uml show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow no show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default drawing_language default package_name_in_tab default show_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition yes write_horizontally default class_drawing_mode class drawing_language uml draw_all_relations default shadow no show_stereotype_properties default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    default_attribute_visibility private default_relation_visibility public default_operation_visibility public
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    classdiagram 128111 "Klassen"
+      draw_all_relations no hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir no show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+      class_color white 
+      size A4
+    end
+
+    class 141196 "User"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 128002 "TWurm"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 128002 "x"
+	private explicit_type "GZ"
+	multiplicity "2"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128130 "y"
+	private explicit_type "GZ"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 128258 "richtung"
+	private explicit_type "ZEICHEN"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 134540 "laenge"
+	private explicit_type "GZ"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 134668 "punkte"
+	private explicit_type "GZ"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 134796 "farbe"
+	private explicit_type "TColor"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 134540 "TWurm"
+	public explicit_return_type ""
+	nparams 4
+	  param in name "px" explicit_type "GZ"
+	  param in name "py" explicit_type "GZ"
+	  param in name "prichtung" explicit_type "ZEICHEN"
+	  param in name "pfarbe" explicit_type "TColor"
+	
+	
+	
+	
+	
+      end
+
+      operation 148364 "destruktor"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 128002 "gibX"
+	public explicit_return_type "GZ"
+	nparams 1
+	  param in name "i" explicit_type "int"
+	
+	
+	
+	
+	
+      end
+
+      operation 128130 "gibY"
+	public explicit_return_type "GZ"
+	nparams 1
+	  param in name "i" explicit_type "int"
+	
+	
+	
+	
+	
+      end
+
+      operation 136834 "setzeX"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "pX" explicit_type "GZ"
+	  param in name "i" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 136962 "setzeY"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "pY" explicit_type "GZ"
+	  param in name "i" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 136706 "gibRichtung"
+	public explicit_return_type "ZEICHEN"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 128386 "setzeRichtung"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "pRichtung" explicit_type "ZEICHEN"
+	
+	
+	
+	
+	
+      end
+
+      operation 134668 "gibPunkte"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 134796 "setzePunkte"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "pPunkte" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 134924 "gibLaenge"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 135052 "setzeLaenge"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "pLaenge" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 135180 "gibFarbe"
+	public explicit_return_type "TColor"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      classrelation 129538 // <unidirectional association>
+	relation 129154 --->
+	  a role_name "" public
+	    classrelation_ref 129538 // <unidirectional association>
+	  b parent class_ref 128130 // TSteuerung
+      end
+
+      operation 155404 "initK"
+	public explicit_return_type ""
+	nparams 3
+	  param in name "pFutter1" type class_ref 134540 // TFutter
+	  param in name "pFutter2" type class_ref 134540 // TFutter
+	  param in name "pFutter3" type class_ref 134540 // TFutter
+	
+	
+	
+	
+	
+      end
+
+      operation 155532 "setzeNah"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "pNah" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 155660 "gibNah"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 155788 "setzeTimer"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "pTimer" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 155916 "gibTimer"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 156044 "ermittleNah"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 156172 "KIRichtung"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 156300 "WandZusatz"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 156428 "KISelbst"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      attribute 142348 "nahesFutter"
+	private explicit_type "GZ"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 142476 "Timer"
+	private explicit_type "GZ"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 142604 "."
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+    end
+
+    class 128130 "TSteuerung"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 129666 // wurm (<unidirectional association>)
+	relation 129282 --->
+	  a role_name "wurm" multiplicity "2" public
+	    classrelation_ref 129666 // wurm (<unidirectional association>)
+	  b parent class_ref 128002 // TWurm
+      end
+
+      classrelation 129794 // F_Worm (<association>)
+	relation 129410 ----
+	  a role_name "F_Worm" multiplicity "1" public
+	    classrelation_ref 129794 // F_Worm (<association>)
+	  b role_name "control" multiplicity "1" public
+	    classrelation_ref 129922 // control (<association>)
+      end
+
+      classrelation 134540 // spiel (<unidirectional association>)
+	relation 134540 --->
+	  a role_name "spiel" multiplicity "1" public
+	    classrelation_ref 134540 // spiel (<unidirectional association>)
+	  b parent class_ref 134668 // TSpielEinstellung
+      end
+
+      classrelation 134668 // futter (<unidirectional association>)
+	relation 134668 --->
+	  a role_name "futter" multiplicity "3" public
+	    classrelation_ref 134668 // futter (<unidirectional association>)
+	  b parent class_ref 134540 // TFutter
+      end
+
+      operation 156812 "."
+	private explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 156940 ".."
+	private explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 157068 "..."
+	private explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 137100 "Spielzug"
+	private explicit_return_type ""
+	nparams 1
+	  param in name "w" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 137228 "Bewegung"
+	private explicit_return_type ""
+	nparams 1
+	  param in name "w" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 137356 "AbfrageWand"
+	private explicit_return_type ""
+	nparams 1
+	  param in name "w" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 137484 "AbfrageSelbst"
+	private explicit_return_type ""
+	nparams 1
+	  param in name "w" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 137612 "AbfrageFutter"
+	private explicit_return_type "BOOL"
+	nparams 3
+	  param in name "px" explicit_type "GZ"
+	  param in name "px" explicit_type "GZ"
+	  param in name "f" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 137740 "Punktgeholt"
+	private explicit_return_type ""
+	nparams 2
+	  param in name "f" explicit_type "GZ"
+	  param in name "w" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 137996 "Kollision"
+	private explicit_return_type ""
+	nparams 1
+	  param in name "w" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 138124 "GameOver"
+	private explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 157196 "FutterAufWurm"
+	private explicit_return_type "BOOL"
+	nparams 1
+	  param in name "f" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 157324 "AbfrageKI"
+	private explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 157452 "KIZug"
+	private explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 138252 "TSteuerung"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 148876 "destruktor"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 138380 "setEinstellungen"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 138508 "createGame"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 138636 "Countdown"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 138764 "Taste"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "pSteuerung" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 138892 "exit"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 128258 "TFWorm"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 129922 // control (<association>)
+	relation_ref 129410 // <association>
+      end
+
+      operation 139020 "createTable"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 139148 "ClearAll"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 139276 "ClearPosition"
+	public explicit_return_type ""
+	nparams 3
+	  param in name "px" explicit_type "GZ"
+	  param in name "py" explicit_type "GZ"
+	  param in name "breite" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 139404 "zeichne"
+	public explicit_return_type ""
+	nparams 3
+	  param in name "pFarbe" explicit_type "TColor"
+	  param in name "px" explicit_type "GZ"
+	  param in name "py" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 139532 "TimerReset"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 139660 "stoppeTimer"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 139788 "starteTimer"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 140044 "Schneller"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 140172 "Langsamer"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 140300 "LCountdown"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "pCount" explicit_type "TEXT"
+	  param in name "vis" explicit_type "BOOL"
+	
+	
+	
+	
+	
+      end
+
+      operation 140428 "EPunkte0"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "pPunkte" explicit_type "TEXT"
+	  param in name "vis" explicit_type "BOOL"
+	
+	
+	
+	
+	
+      end
+
+      operation 140556 "EPunkte1"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "pPunkte" explicit_type "TEXT"
+	  param in name "vis" explicit_type "BOOL"
+	
+	
+	
+	
+	
+      end
+
+      operation 140684 "LEndPunkte0"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "pPunkte" explicit_type "TEXT"
+	  param in name "vis" explicit_type "BOOL"
+	
+	
+	
+	
+	
+      end
+
+      operation 140812 "LEndPunkte2"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "pPunkte" explicit_type "TEXT"
+	  param in name "vis" explicit_type "BOOL"
+	
+	
+	
+	
+	
+      end
+
+      operation 140940 "MenuInfoAnzahl"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 141068 "MenuInfoGameMod"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 141196 "createMainMenu"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 141324 "terminateMainMenu"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 141452 "gibAnzahlAuswahl"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 141580 "gibGameModAuswahl"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 141708 "createGameMenu"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 141836 "terminateGameMenu"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 134540 "TFutter"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 134924 "x"
+	private explicit_type "GZ"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135052 "y"
+	private explicit_type "GZ"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135180 "aktiv"
+	private explicit_type "BOOL"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135308 "futtertyp"
+	private explicit_type "GZ"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135436 "futterfarbe"
+	private explicit_type "TColor"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 135308 "Futtertyp"
+	private explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 135436 "TFutter"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 148492 "destruktor"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 135564 "createFutter"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 135692 "gibX"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 135820 "gibY"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 135948 "gibTyp"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 136076 "gibFarbe"
+	public explicit_return_type "TColor"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 136204 "gibAktiv"
+	public explicit_return_type "BOOL"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 136332 "setzteAktiv"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "pAktiv" explicit_type "BOOL"
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 134668 "TSpielEinstellung"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 135564 "gamemod"
+	private explicit_type "BOOL"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135692 "anzahlSpieler"
+	private explicit_type "BOOL"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 136460 "TSpielEinstellung"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 148748 "destruktor"
+	public explicit_return_type ""
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 136588 "gibGamemod"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 136716 "gibAnzahl"
+	public explicit_return_type "GZ"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 136844 "setzeGamemod"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "g" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 136972 "setzteAnzahl"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "a" explicit_type "GZ"
+	
+	
+	
+	
+	
+      end
+
+      operation 156556 "gibKI"
+	public explicit_return_type "BOOL"
+	nparams 0
+	
+	
+	
+	
+	
+      end
+
+      operation 156684 "setzeKI"
+	public explicit_return_type ""
+	nparams 1
+	  param in name "pKI" explicit_type "BOOL"
+	
+	
+	
+	
+	
+      end
+
+      attribute 142220 "KI"
+	private explicit_type "BOOL"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+    end
+
+    sequencediagram 128239 "createGame"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default
+      overlapping_bars size A4
+    end
+
+    sequencediagram 128012 "Spielzug"
+      show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default
+      overlapping_bars size A4
+    end
+  end
+end
